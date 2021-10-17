@@ -1,0 +1,13 @@
+.header img{
+    cursor: pointer;
+    width: 120px;
+}
+.header nav a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+}
+.header nav button{
+    border: none;
+    border-radius: 30%;
+}
