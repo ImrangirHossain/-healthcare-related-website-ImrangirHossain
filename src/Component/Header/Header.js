@@ -2,7 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 import logo from '../../image/logo.png'
+import useAuth from '../../hooks/useAuth';
 const Header = () => {
+    const {user,logOut} = useAuth();
+
     const navLink={
         fontWeight: 'bold',
         color: 'goldenrod',
@@ -19,6 +22,9 @@ const Header = () => {
                 <NavLink activeStyle={navLink} to="/services">SERVICES</NavLink>
                 <NavLink activeStyle={navLink} to="/about">ABOUT</NavLink>
                 <NavLink activeStyle={navLink} to="/contact">CONTACT</NavLink>
+                {!user?.email && <NavLink activeStyle={navLink} to="/Login">LOGIN</NavLink>}
+                <span>{user.displayName} </span>
+                {user?.email && <NavLink  onClick={logOut} to="/Login">LOGOUT</NavLink>}
                 
                 <button><i className="fas fa-search text-muted"></i></button>
             </nav>
