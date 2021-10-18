@@ -3,7 +3,6 @@ import { useParams } from 'react-router';
 
 const ServiceDetails = () => {
     const {serviceId} = useParams();
-    console.log(serviceId)
     const [details, setDetails] = useState([]);
     useEffect(()=>(
         fetch('/services.json')
@@ -11,8 +10,6 @@ const ServiceDetails = () => {
         .then(data => setDetails(data))
     ),[])
         const singleDetails = details.find(singleDetail => singleDetail.key === serviceId);
-
-    console.log(details);
 
     return (
         <div className="d-flex justify-content-center my-3">
