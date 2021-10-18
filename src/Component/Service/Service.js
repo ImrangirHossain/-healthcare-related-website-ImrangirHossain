@@ -1,7 +1,8 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Service = (props) => {
-    const {title,discription,img, price } = props.service;
+    const {title,discription,img, price,key } = props.service;
     return (
         <div>
              <div className="col text-start">
@@ -10,8 +11,11 @@ const Service = (props) => {
                     <div className="card-body">
                     <h5 className="card-title">{title}</h5>
                      <p><small> {discription}</small></p>   
-                     <h2>Price: {price}</h2>       
-                     <button className="btn btn-primary">Book Now</button>
+                     <h2>Price: {price}</h2>    
+                     <NavLink to={`/details/${key}`}>
+                          <button className="btn btn-primary">Details</button>
+                    </NavLink>
+                        
                     </div>
                     </div>
                 </div>

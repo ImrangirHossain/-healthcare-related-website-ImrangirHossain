@@ -11,6 +11,8 @@ import About from './Component/About/About';
 import AuthProvider from './Context/AuthProvider';
 import Login from './Component/Login/Login';
 import Register from './Component/Register/Register';
+import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
+import ServiceDetails from './Component/ServiceDetails/ServiceDetails';
 function App() {
   return (
     <div className="App">
@@ -27,12 +29,15 @@ function App() {
             <Route path='/services'>
                 <Services></Services>
             </Route>
+            <PrivateRoute path='/details/:serviceId'>
+                <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
             <Route path='/about'>
               <About></About>
             </Route>
-            <Route path='/contact'>
+            <PrivateRoute path='/contact'>
               <Contact></Contact>
-            </Route>
+            </PrivateRoute>
             <Route path='/login'>
               <Login></Login>
             </Route>
