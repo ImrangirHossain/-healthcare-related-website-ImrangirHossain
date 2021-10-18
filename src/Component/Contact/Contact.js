@@ -5,8 +5,11 @@ const Contact = () => {
     return (
         <div>
                 <div>
-                     <h1 className="text-start ps-3">Contact US</h1>
+                     <h1 className="text-start ps-3">DOCTOR APPOINTMENT</h1>
                 </div>
+
+             {/* contact form */}
+               <Form></Form>
 
             {/* location and numbers for contact */}
 
@@ -40,8 +43,7 @@ const Contact = () => {
                 </div>
               </div>
 
-                {/* contact form */}
-                <Form></Form>
+               
 
             </div>
     );
