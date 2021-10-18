@@ -1,4 +1,4 @@
-# Get Popular Services or Course From Our Educate Website 
+# Get Popular Services From Our Healthcare Website 
 
 Website Link: https://healthcare-milestone-10-imrangir.netlify.app/
 
