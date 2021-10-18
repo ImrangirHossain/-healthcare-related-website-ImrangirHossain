@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import image from '../../image/banner.png'
 const Banner = () => {
     return (
@@ -15,7 +16,9 @@ const Banner = () => {
                         <p><i className="fas fa-arrow-circle-right me-2"></i>Diagnosing oral diseases. </p>
                         <p><i className="fas fa-arrow-circle-right me-2"></i>Interpreting x-rays and diagnostic tests. </p>
                         <p><i className="fas fa-arrow-circle-right me-2"></i>Ensuring the safe administration of anesthetics.</p>
+                        <Link to="/services">
                         <button className="btn btn-outline-light fw-bold">Purchase <i className="fas fa-chevron-right"></i></button>
+                        </Link>
                     </div>
             </div>
             

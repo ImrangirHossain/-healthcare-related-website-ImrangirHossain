@@ -6,7 +6,7 @@ const Form = () => {
             <h3>Appointment Details</h3>
 
             <div className="form text-start">
-                <div className="row row-cols-lg-3 g-4 mx-3 my-2">
+                <div className="row row-cols-md-3 row-cols-1 g-4 mx-3 my-2">
                     <div className="col">
                         <input type="text" className="form-control"  placeholder="Full-Name" />
                     </div>
