@@ -5,7 +5,8 @@ import useAuth from '../../hooks/useAuth';
 const Register = () => {
     const {handleNameChange, handlePasswordChange, handleEmailChange, handleRegistration, error} = useAuth();
     return (
-        <div className="text-start p-5 w-50 mx-auto">
+    <div className="text-start p-5 mx-auto">
+       <div className="col-lg-4 col-md-6 col-12 mx-auto">
              <h2>Please Register</h2>
             <form onSubmit={handleRegistration}>
             <div className="mb-3">
@@ -26,6 +27,7 @@ const Register = () => {
             </form>
             <Link to="/login">Already Registered?</Link>
         </div>
+     </div>
     );
 };
 
