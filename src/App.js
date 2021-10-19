@@ -12,6 +12,7 @@ import Login from './Component/Login/Login';
 import Register from './Component/Register/Register';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import ServiceDetails from './Component/ServiceDetails/ServiceDetails';
+import Payment from './Component/Payment/Payment';
 function App() {
   return (
     <div className="App">
@@ -36,6 +37,9 @@ function App() {
             </Route>
             <PrivateRoute path='/appointment'>
               <Contact></Contact>
+            </PrivateRoute>
+            <PrivateRoute path='/payment'>
+              <Payment></Payment>
             </PrivateRoute>
             <Route path='/login'>
               <Login></Login>

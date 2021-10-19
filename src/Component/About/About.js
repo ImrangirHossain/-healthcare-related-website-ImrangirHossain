@@ -1,5 +1,6 @@
 import React from 'react';
 import img from '../../image/about.jpg'
+import Teams from '../Teams/Teams';
 const About = () => {
     return (
         <div>
@@ -12,6 +13,7 @@ const About = () => {
                     <p>We believe the skillset  experience we possess not only shall bring value to you, but in turn shall also help us to acquire experience  sharpen our skills amidst you professional work. If given an opportunity we positively look forward to give our best to you.</p>
                 </div>
             </div>
+            <Teams></Teams>
         </div>
     );
 };
